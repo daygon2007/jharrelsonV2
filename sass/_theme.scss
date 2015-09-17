@@ -208,18 +208,37 @@ footer{
 
 /* Home Page */
 #home-sub-head{
-	min-height:250px;
-	background: url(http://lorempixel.com/1920/750/people) no-repeat center center fixed;
-	background-size:cover;
+	min-height:500px;
+	/*background: url(http://lorempixel.com/1920/750/people) no-repeat center center fixed;
+	background-size:cover;*/
+	position:relative;
+	overflow:hidden;
 		.overlay{
 			height: 100%;
-			min-height: 250px;
+			min-height: 500px;
+			position:relative;
 				h3{
 					font-size: 5rem;
 					color: #fff;
 					margin:0;
-					padding:10px 0;
+					padding:0 25px;
+					position:absolute;
+					left:0;
+					right:0;
+					top:50%;
+					transform:translateY(-50%);
 				}
+		}
+		#videobcg { 
+			 position: absolute;
+			 top: -325px;
+			 left: 0px;
+			 min-width: 100%;
+			 min-height: 100%;
+			 width: auto;
+			 height: auto;
+			 z-index: -1000;
+			 overflow: hidden;
 		}
 }
 .home-blocks{

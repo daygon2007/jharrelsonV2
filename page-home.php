@@ -12,6 +12,10 @@
 
 get_header(); ?>
 <div id="home-sub-head" data-type="background" data-speed="3">
+<video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+     <source src="<?php bloginfo('template_directory'); ?>/images/home-bg-vid.mp4" type="video/mp4">
+          Sorry, your browser does not support HTML5 video.
+</video>
   <div class="container">
     <div class="row">
       <div class="col-md-6 overlay">

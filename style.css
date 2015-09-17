@@ -1197,24 +1197,44 @@ footer {
 /* Home Page */
 /* line 210, sass/_theme.scss */
 #home-sub-head {
-  min-height: 250px;
-  background: url(http://lorempixel.com/1920/750/people) no-repeat center center fixed;
-  background-size: cover;
+  min-height: 500px;
+  /*background: url(http://lorempixel.com/1920/750/people) no-repeat center center fixed;
+  background-size:cover;*/
+  position: relative;
+  overflow: hidden;
 }
-/* line 214, sass/_theme.scss */
+/* line 216, sass/_theme.scss */
 #home-sub-head .overlay {
   height: 100%;
-  min-height: 250px;
+  min-height: 500px;
+  position: relative;
 }
-/* line 217, sass/_theme.scss */
+/* line 220, sass/_theme.scss */
 #home-sub-head .overlay h3 {
   font-size: 5rem;
   color: #fff;
   margin: 0;
-  padding: 10px 0;
+  padding: 0 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 232, sass/_theme.scss */
+#home-sub-head #videobcg {
+  position: absolute;
+  top: -325px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
 }
 
-/* line 225, sass/_theme.scss */
+/* line 244, sass/_theme.scss */
 .home-blocks {
   background: #1c1d21;
   color: #eeeff7;
@@ -1222,21 +1242,21 @@ footer {
   border-top: medium solid #eeeff7;
   border-bottom: medium solid #eeeff7;
 }
-/* line 231, sass/_theme.scss */
+/* line 250, sass/_theme.scss */
 .home-blocks:nth-of-type(2) {
   background: #31353d;
 }
-/* line 234, sass/_theme.scss */
+/* line 253, sass/_theme.scss */
 .home-blocks h4 {
   text-align: center;
 }
-/* line 237, sass/_theme.scss */
+/* line 256, sass/_theme.scss */
 .home-blocks ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 245, sass/_theme.scss */
+/* line 264, sass/_theme.scss */
 .home-blocks #result {
   background-color: #eeeff7;
   color: #1c1d21;
@@ -1245,70 +1265,70 @@ footer {
   display: none;
   margin-top: 15px;
 }
-/* line 252, sass/_theme.scss */
+/* line 271, sass/_theme.scss */
 .home-blocks #result ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 256, sass/_theme.scss */
+/* line 275, sass/_theme.scss */
 .home-blocks #result ul li {
   padding: 0;
   margin: 0;
 }
-/* line 262, sass/_theme.scss */
+/* line 281, sass/_theme.scss */
 .home-blocks #video {
   width: 400px;
   height: 300px;
 }
 
-/* line 268, sass/_theme.scss */
+/* line 287, sass/_theme.scss */
 #about-me {
   background: url(images/about-bg.jpg) center center no-repeat;
   background-size: cover;
   color: #eeeff7;
 }
-/* line 272, sass/_theme.scss */
+/* line 291, sass/_theme.scss */
 #about-me h4 {
   font-size: 4rem;
 }
-/* line 275, sass/_theme.scss */
+/* line 294, sass/_theme.scss */
 #about-me .overlay {
   padding: 50px;
   min-height: 360px;
 }
 
-/* line 280, sass/_theme.scss */
+/* line 299, sass/_theme.scss */
 #home-blog {
   color: #eeeff7;
   background: #1c1d21;
 }
-/* line 283, sass/_theme.scss */
+/* line 302, sass/_theme.scss */
 #home-blog .section-header {
   content: '';
 }
-/* line 285, sass/_theme.scss */
+/* line 304, sass/_theme.scss */
 #home-blog .section-header h4 {
   font-size: 4rem;
 }
-/* line 289, sass/_theme.scss */
+/* line 308, sass/_theme.scss */
 #home-blog h5 {
   font-size: 1.75rem;
 }
 
 /* Blog */
-/* line 295, sass/_theme.scss */
+/* line 314, sass/_theme.scss */
 .blog-post {
   border-bottom: thin solid #eeeff7;
   padding: 15px 0;
 }
-/* line 298, sass/_theme.scss */
+/* line 317, sass/_theme.scss */
 .blog-post:last-of-type {
   border: none;
 }
 
 /* Inner Pages */
-/* line 304, sass/_theme.scss */
+/* line 323, sass/_theme.scss */
 #content-main {
   background: #31353d;
   color: #eeeff7;
@@ -1317,18 +1337,18 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
-  /* line 312, sass/_theme.scss */
+  /* line 331, sass/_theme.scss */
   .social-nav {
     display: none;
   }
 
-  /* line 315, sass/_theme.scss */
+  /* line 334, sass/_theme.scss */
   .navbar-nav {
     width: 100%;
     text-align: center;
   }
 
-  /* line 319, sass/_theme.scss */
+  /* line 338, sass/_theme.scss */
   .container-fluid {
     padding: 0;
   }
