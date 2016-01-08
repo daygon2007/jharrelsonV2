@@ -173,8 +173,8 @@ add_action('wp_ajax_nopriv_moz_api', 'moz_api_callback');
 
 function moz_api_callback(){
 	// you can obtain you access id and secret key here: https://moz.com/products/api/keys
-$accessID = "mozscape-c400337ba7";
-$secretKey = "272edc64ff57f002b64551e2ea3b5de";
+$accessID = "";
+$secretKey = "";
 // Set your expires for several minutes into the future.
 // Values excessively far in the future will not be honored by the Mozscape API.
 $expires = time() + 300;
